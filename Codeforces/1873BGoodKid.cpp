@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define long long ll
-int all_prod(int* arr, int n){
+int all_prod(int arr[], int n){
     int count = 1;
     for(int i=0;i<n;i++){
         count = count * arr[i];
@@ -12,11 +12,10 @@ int main(){
     int t;
     cin>>t;
     int n;
-    int *arr2 = (int*)malloc(sizeof(int)*t);
-    for(auto i=0; i<t;i++){
+    int arr2[t];
+    for(int k=0; k<t;k++){
     cin>>n;
-    int *arr = (int*)malloc(sizeof(int)*n);
-    
+    int arr[n];
     for(int j=0;j<n;j++){
         cin>>arr[j];
     }
@@ -26,13 +25,12 @@ int main(){
         v1.push_back(all_prod(arr, n));
         arr[i] = arr[i] - 1;
     }
-    sort(v1.begin(), v1.end());
-    arr2[t] = v1[n-1];
-    cout<<"->"<<v1[n-1];
+    arr2[k] = *max_element(v1.begin(), v1.end());
+    //cout<<arr2[k]<<" ";
     }
-    cout<<"\n";
-    for(int i=0;i<t;i++){
-        cout<<arr2[i]<<"\n";
+    for(auto l: arr2){
+        cout<<l<<"\n";
     }
+    //cout<<"Hehe";
     return 0;
 }
