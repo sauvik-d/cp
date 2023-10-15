@@ -1,5 +1,5 @@
 # CodeForce codes
-Uses:
-long long
-use bits/stdc++.h instead of iostream
+Uses:<br>
+long long<br>
+bits/stdc++.h instead of iostream<br>
 map & vector
