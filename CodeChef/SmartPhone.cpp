@@ -15,6 +15,5 @@ int main(){
         maximum = max(count, maximum);
     }
     cout<<maximum<<endl;
-    
     return 0;
 }
