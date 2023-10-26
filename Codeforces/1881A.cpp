@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 #define char_alloc(n) (char*)malloc(sizeof(char)*n)
 using namespace std;
+char* oper(char* x){
+    //
+}
 int main(){
     int t;
     cin>>t;
