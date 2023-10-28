@@ -1,4 +1,4 @@
-//Incomplete do the length and its occurrence...
+//Incomplete do the length and its occurrence... length and length_occur
 #include<bits/stdc++.h>
 using namespace std;
 void depth(vector<long> v1){
