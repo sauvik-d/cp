@@ -8,9 +8,7 @@ int main(){
 		cin>>n;
 		cin>>x;
 		string str;
-		for(int i=0;i<n;i++){
-			cin>>str[i];
-		}
+		cin>>str;
 		int swipe = 0;
 		int flag = 0;
 		for(int i=0;i<n;i++){
