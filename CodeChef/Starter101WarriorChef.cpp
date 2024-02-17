@@ -6,8 +6,9 @@ int main(){
     int n, h;
     while(t--){
         
-        vector<int> a(n);
+        
         cin>>n>>h;
+        vector<int> a(n);
         for(int i=0;i<n;i++){
             cin>>a[i];
         }
